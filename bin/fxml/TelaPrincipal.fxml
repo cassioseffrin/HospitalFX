@@ -5,12 +5,13 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.ControllerTelaPrincipal">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerTelaPrincipal">
    <children>
       <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
         <menus>
           <Menu mnemonicParsing="false" text="Paciente">
             <items>
+                  <MenuItem fx:id="menuTeste" mnemonicParsing="false" onAction="#handlerFormTeste" text="Menu teste" />
               <MenuItem fx:id="menuItemCadastrarPaciente" mnemonicParsing="false" onAction="#handlerTelaPaciente" text="Cadastrar" />
             </items>
           </Menu>

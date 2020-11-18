@@ -8,7 +8,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="374.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.ControllerTelaMedico">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="374.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerTelaMedico">
    <children>
       <TableView fx:id="tableViewMedico" layoutX="1.0" layoutY="229.0" prefHeight="145.0" prefWidth="600.0">
         <columns>
@@ -40,7 +40,7 @@
       <TextField fx:id="textFieldEspecialidade" layoutX="95.0" layoutY="162.0" prefHeight="25.0" prefWidth="91.0" />
       <Label layoutX="215.0" layoutY="6.0" text="CADASTRO DE MÉDICO" />
       <Button fx:id="buttonSalvar" layoutX="49.0" layoutY="195.0" mnemonicParsing="false" onAction="#handlerSalvarMedico" text="Salvar" />
-      <Button fx:id="buttonExcluir" layoutX="127.0" layoutY="195.0" mnemonicParsing="false" onAction="#handlerExcluirMedico" text="Excluir" />
+      <Button fx:id="buttonExcluir" layoutX="127.0" layoutY="195.0" mnemonicParsing="false" onAction="#excluirMedico" text="Excluir" />
       <Button fx:id="buttonNovo" layoutX="202.0" layoutY="195.0" mnemonicParsing="false" onAction="#handlerNovoMedico" text="Novo" />
    </children>
 </AnchorPane>

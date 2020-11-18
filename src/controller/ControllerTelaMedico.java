@@ -6,6 +6,7 @@ import hospital.Medico;
 import java.net.URL;
 import java.sql.Connection;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
@@ -129,7 +130,6 @@ public class ControllerTelaMedico implements Initializable {
         tableColumnNascimento.setCellValueFactory(new PropertyValueFactory<>("dataNascimento"));
         tableColumnTelefone.setCellValueFactory(new PropertyValueFactory<>("telefone"));
         tableColumnEspecialidade.setCellValueFactory(new PropertyValueFactory<>("especialidade"));
-
         olMedico = FXCollections.observableArrayList(list);
         tableViewMedico.setItems(olMedico);
     }
@@ -149,7 +149,7 @@ public class ControllerTelaMedico implements Initializable {
     }
 
     @FXML
-    private void handlerExcluirMedico(ActionEvent event) {
+    private void excluirMedico(ActionEvent event) {
         if (idMedicoSelecionado != null){
             DatabaseMySQL db = new DatabaseMySQL();
             Connection con = db.conectar();
