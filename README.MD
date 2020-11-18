@@ -1,3 +1,13 @@
+
+Projeto Java Básico usado como referência para disciplina de programação semestre 2020/2
+
+Padrão de projeto Singleton
+GUI com JavaFX
+
+
+
+
+DDL banco 
 create database hospital
 
 use hospital
